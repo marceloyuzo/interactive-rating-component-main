@@ -1,0 +1,137 @@
+
+:root {
+    --color-background: rgba(20,21,25,255);
+    --color-title: rgba(242,246,248,255);
+    --color-primary: hsl(25, 97%, 53%);
+    --color-secondary: rgba(116,123,133,255);
+    --color-background-circle: rgba(38,47,56,255);
+    --color-background-section: rgba(31,38,48,255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+
+/**************
+    CONTENT
+**************/
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--color-background-section);
+    display: flex;
+    flex-flow: column;
+    width: 360px;
+    height: 370px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container .starIcon {
+    background-color: var(--color-background-circle);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    color: var(--color-title);
+    margin-bottom: 10px;
+}
+
+.container span {
+    color: var(--color-secondary);
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 22px;
+}
+
+.container .numberStars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.container .numberStars button {
+    font-weight: bold;
+    color: var(--color-secondary);
+    background-color: var(--color-background-circle);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    
+}
+
+.container #buttonSubmit {
+    background-color: var(--color-primary);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 45px;
+    color: var(--color-title);
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/**************
+    FOOTER
+**************/
+.attribution { 
+    color: var(--color-title);
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    min-width: 100%;
+    bottom: 10px;
+
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+/**************************
+    RESPONSIVE DESIGN
+**************************/
+@media (max-width: 375px) {
+    .container {
+        width: 330px;
+        padding: 25px;
+    }
+
+    .container span {
+        font-size: 14px;
+    }
+
+    .container .numberStars button {
+        width: 42px;
+        height: 42px;
+        
+    }
+
+
+}

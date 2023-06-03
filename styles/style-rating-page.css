@@ -59,7 +59,7 @@ body {
     margin-bottom: 10px;
 }
 
-.container span {
+.container #spanMessage {
     color: var(--color-secondary);
     font-size: 15px;
     margin-bottom: 30px;
@@ -72,7 +72,7 @@ body {
     margin-bottom: 25px;
 }
 
-.container .numberStars button {
+.container .numberStars span {
     font-weight: bold;
     color: var(--color-secondary);
     background-color: var(--color-background-circle);
@@ -81,7 +81,20 @@ body {
     border-radius: 50%;
     border: none;
     outline: none;
-    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .numberStars span:hover {
+    background-color: rgba(124,136,152,255);
+    color: rgba(249,253,255,255);
+}
+
+.numberStars span.active {
+    background-color: var(--color-primary);
+    color: rgba(249,253,255,255);
 }
 
 .container #buttonSubmit {
@@ -90,10 +103,17 @@ body {
     border: none;
     border-radius: 20px;
     height: 45px;
+    width: 300px;
     color: var(--color-title);
     letter-spacing: 2px;
     font-size: 13px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.container #buttonSubmit:hover {
+    background-color: white;
+    color: var(--color-primary);
 }
 
 
